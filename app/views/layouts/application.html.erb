@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Derramandolacabeza</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id='container'>
+
+  <div id='header'>
+    <img alt="Derramando la Cabeza" src="/derramandolas_white.png" />
+  </div>
+
+  <div id='content'>
+    <%= yield %>
+  </div>
+
+  <div id='column'>
+
+
+  <p>
+  Informatico dedicado a la administracion de sistemas, con pasión po la web y el open source<br><br>. Espero que los derrames sean de tu utilidad.<br><br></a>
+                Support the Free Software Foundation:<p><a href="http://www.fsf.org/register_form?referrer=12290" target='_blank'><img src="http://static.fsf.org/nosvn/associate/fsf-12290.png" alt="[FSF Associate Member]" style='text-align:center;'/></a><p>
+
+  Usa: <a href="http://sabayon.org" target='_blank'>Sabayon Linux!</a><p>
+  <!--column ends-->
+  </div>
+
+  <div id='footer'>
+    2014 - Derramando la Cabeza
+  </div>
+
+<!-- container ends-->
+</div>
+
+</body>
+</html>
