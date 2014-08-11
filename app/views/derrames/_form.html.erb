@@ -12,11 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :titulo %><br><%= f.text_field :title %><br>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
+    <%= f.label :fecha_de_creacion %><br><%= f.text_field :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :contenido %><br>
     <%= f.text_area :content %>
   </div>
   <div class="actions">

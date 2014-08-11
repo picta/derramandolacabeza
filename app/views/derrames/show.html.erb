@@ -1,14 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @derrame.title %>
+  <strong><%= @derrame.title %></strong>
 </p>
 
 <p style="white-space: pre-wrap;">
-  <strong>Content:</strong>
   <%= @derrame.content %>
 </p>
 
-<%= link_to 'Edit', edit_derrame_path(@derrame) %> |
-<%= link_to 'Back', derrames_path %>
+<%= link_to 'Editar', edit_derrame_path(@derrame) %> |
+<%= link_to 'Atras', derrames_path %>

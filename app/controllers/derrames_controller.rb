@@ -72,6 +72,6 @@ class DerramesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def derrame_params
-      params.require(:derrame).permit(:title, :content)
+      params.require(:derrame).permit(:title, :content, :created_at)
     end
 end
