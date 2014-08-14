@@ -16,7 +16,8 @@
       <tr style="background-color:#D0D0D0;">	
         <td colspan="4" style="white-space: pre-wrap;";><%= derrame.content %></td>
       </tr>
-      <tr><td><div class="share-buttons"></div></td></tr>
+      <tr><td><%= google_plus_button(href: derrame_url(derrame), size: "medium", annotation: "bubble", script: "true") %> <%= tweet_button(url: derrame_url(derrame), text: derrame.title, via: "derramandolacabeza", count: "horizontal" ) %> </td></tr>
+      <!--tr><td><div class="share-buttons"></div></td></tr-->
     <% end %>
   </tbody>
 </table>
