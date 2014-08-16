@@ -5,7 +5,7 @@ require "sprockets/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+Bundler.require(*Rails.groups(:assets => %w(development test production)))
 
 module Derramandolacabeza
   class Application < Rails::Application
