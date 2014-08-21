@@ -10,8 +10,11 @@
       <tr>
         <td align="right">Fecha de creación: <%= derrame.created_at.strftime("%d %b. %Y") %></td>
 	<td><%= link_to 'Show', derrame %></td>
+	<% if Rails.env.development? %>
+	<td><% Rails.env %></td>
 	<td><%= link_to 'Edit', edit_derrame_path(derrame) %></td>
 	<td><%= link_to 'Destroy', derrame, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<% end %>
       </tr>
       <tr style="background-color:#D0D0D0;">	
         <td colspan="4" style="white-space: pre-wrap;";><%= derrame.content %></td>
@@ -25,4 +28,6 @@
 
 <center><%= will_paginate @derrames %></center>
 
+<% if Rails.env.development? %>
 <%= link_to 'New Derrame', new_derrame_path %>
+<% end %>
