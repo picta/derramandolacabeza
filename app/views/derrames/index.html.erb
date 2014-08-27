@@ -26,7 +26,7 @@
 
 <br>
 
-<center><%= will_paginate @derrames %></center>
+<center><%= will_paginate @derrames, :previous_label => t("Anterior"), :next_label => t("Siguiente") %></center>
 
 <% if Rails.env.development? %>
 <%= link_to 'New Derrame', new_derrame_path %>
