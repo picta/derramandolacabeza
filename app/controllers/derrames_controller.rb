@@ -1,6 +1,6 @@
 class DerramesController < ApplicationController
   before_action :set_derrame, only: [:show, :edit, :update, :destroy]
-  http_basic_authenticate_with name: "satan", password: "666", except: [:index, :show]
+  http_basic_authenticate_with name: "admin", password: "admin", except: [:index, :show]
 
   # GET /derrames
   # GET /derrames.json

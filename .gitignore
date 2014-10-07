@@ -4,5 +4,7 @@ tmp/*
 app/controllers/derrames_controller.rb
 db/production.sqlite3
 db/development.sqlite3
+db/test.sqlite3
 ./db/production.sqlite3
 ./db/development.sqlite3
+./db/test.sqlite3
