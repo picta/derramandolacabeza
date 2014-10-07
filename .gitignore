@@ -1,5 +1,7 @@
 tmp/
 tmp/*
+log/*
+log/
 ./app/controllers/derrames_controller.rb
 app/controllers/derrames_controller.rb
 db/production.sqlite3
